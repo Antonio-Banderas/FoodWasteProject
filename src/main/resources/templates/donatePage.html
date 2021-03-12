@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/styles/main.css">
+    <title>Title</title>
+</head>
+<body>
+<main>
+    <section class="donate-sec1">
+
+        <div class="dropdown">
+            <button class="dropbtn1">Choose food type</button>
+            <div class="dropdown-content">
+                <a href="#">Meat</a>
+                <a href="#">Veggies</a>
+                <a href="#">Dairies</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn2">Choose food</button>
+            <div class="dropdown-content">
+                <a href="#">Chicken</a>
+                <a href="#">Beef</a>
+                <a href="#">Lamb</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn3">Precooked meal</button>
+            <div class="dropdown-content">
+                <a href="#">Yes</a>
+                <a href="#">No</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="donate-sec2">
+        <div class="specify-food">
+            <form action="food-specification" method="post">
+                <label for="food-specs">Specify your food</label>
+                <input type="text" name="food-specs" id="food-specs">
+            </form>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
