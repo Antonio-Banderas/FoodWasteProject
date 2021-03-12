@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @author Carsten
@@ -9,4 +10,19 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 public class FoodController {
+
+    //index page
+    @GetMapping("/")
+    public String renderIndex(){
+        return "index.html";
+    }
+    @GetMapping("/index")
+    public String redirectIndex(){
+        return "redirect:/";
+    }
+
+    @GetMapping("/login")
+    public String renderLogin(){
+        return "login.html";
+    }
 }

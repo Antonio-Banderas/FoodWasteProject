@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<header>
+    <link rel="stylesheet" th:href="@{/styles/header.css}" type="text/css">
+    <img th:src="@{/images/nav-top.jpg}" alt="food" /> <!-- //todo mangler billede -->
+    <nav>
+        <ul>
+            <div class="nav-left">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </div>
+            <div class="nav-right">
+                <li><a href="/login">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
 </html>
