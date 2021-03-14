@@ -5,47 +5,58 @@
 <body>
 <header th:replace="fragments/header.html"></header>
 <main>
+    <!-- First section with Food dropdown-lists -->
     <section class="donate-sec1">
-
         <div class="dropdown">
-            <button class="dropbtn1">Choose food type</button>
+            <button class="dropbtn1">Vælg fødevarerkategori</button>
             <div class="dropdown-content">
-                <a href="#">Meat</a>
-                <a href="#">Veggies</a>
-                <a href="#">Dairies</a>
+                <a href="#">Kød</a>
+                <a href="#">Frugt/Grønt</a>
+                <a href="#">Mælkeprodukter</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn2">Choose food</button>
+            <button class="dropbtn2">Vælg en slags mad</button>
             <div class="dropdown-content">
-                <a href="#">Chicken</a>
-                <a href="#">Beef</a>
-                <a href="#">Lamb</a>
+                <a href="#">Kylling</a>
+                <a href="#">Okse</a>
+                <a href="#">Lam</a>
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn3">Precooked meal</button>
+            <button class="dropbtn3">Er det en måltidsret?</button>
             <div class="dropdown-content">
-                <a href="#">Yes</a>
-                <a href="#">No</a>
+                <a href="#">Ja</a>
+                <a href="#">Nej</a>
             </div>
         </div>
     </section>
-
+    <!-- 2 section with food specs, pickup-time and date-->
     <section class="donate-sec2">
-        <div class="specify-food">
-            <form action="food-specification" method="post">
-                <label for="food-specs">Specify your food</label>
-                <input type="text" name="food-specs" id="food-specs">
-            </form>
+        <div id="box-sec2">
+            <div class="divs-sec2">
+                <form action="food-specification" method="post">
+                    <label for="food-specs">Beskriv maden, du vil donere<br></label>
+                    <input type="text" name="food-spec-box" id="food-specs">
+                </form>
+            </div>
+            <div class="divs-sec2">
+                <label for="pickup-time">Vælg afhentningstidspunkt<br></label>
+                <input type="time" id="pickup-time" name="pickup-box"
+                       min="00:00" max="23:59" required>
+            </div>
+            <div class="divs-sec2">
+                <label for="expiration">Holdbarhedsdato<br></label>
+                <input type="date" id="expiration" name="expiration-box"
+                       value="2021-03-16"
+                       min="2018-01-01" max="2023-12-31">
+            </div>
         </div>
-        <div class="time-table">
-            <label for="pickup-time">Choose a pickup time</label>
-
-            <input type="time" id="pickup-time" name="pickup-time"
-                   min="00:00" max="23:59" required>
+    </section>
+    <section class="donate-sec3">
+        <div class="donate-btn">
+        <button class="donate-now"><a href="confirm-page.html">Doner ---></a></button>
         </div>
-
     </section>
 </main>
 <footer th:replace="@{fragments/footer.html}"></footer>
