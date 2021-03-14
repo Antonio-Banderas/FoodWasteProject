@@ -1,5 +1,6 @@
 package com.example.demo.models;
 
+
 import java.time.LocalDate;
 
 /**
@@ -24,16 +25,16 @@ public class Food {
         this.expiration = expiration;
     }
 
-    public boolean otherInfo(boolean isVegan, boolean isHalal, boolean isLactoseFree, boolean isGlutenFree){
-        if (this.isVegan = isVegan){
+    public boolean otherInfo(boolean isVegan, boolean isHalal, boolean isLactoseFree, boolean isGlutenFree) {
+        if (this.isVegan = isVegan) {
             return true;
-        } else if ( this.isHalal = isHalal){
+        } else if (this.isHalal = isHalal) {
             return true;
-        } else if (this.isLactoseFree = isLactoseFree){
+        } else if (this.isLactoseFree = isLactoseFree) {
             return true;
-        } else if (this.isGlutenFree = isGlutenFree){
+        } else if (this.isGlutenFree = isGlutenFree) {
             return true;
         }
-       return false;
+        return false;
     }
 }
