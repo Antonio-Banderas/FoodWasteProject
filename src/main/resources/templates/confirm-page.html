@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-
+<head th:fragment="fragments/head.html(currentPage = 'Confirm?')"></head>
 
 
 <body>
 
 <section class="information">
     <h1>Information</h1>
-    <p>Food type: <span th:text="$"{foodCategory}"</span></p>
+    <p>Food type: <span th:text="${foodCategory}"></span></p>
     <p>Location:</p>
     <p>Your doner:</p>
     <p>Pick-up time:</p>

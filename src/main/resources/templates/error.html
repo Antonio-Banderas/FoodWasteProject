@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:fragment="fragments/head.html(currentPage = 'Index')"></head>
-
+<head th:fragment="fragments/head.html(currentPage = 'Error')"></head>
 <body>
 <header th:replace="fragments/header.html"></header>
 
+<img th:src="@{/images/embarrassed_bear.webp}" alt="embarrassed polar bear" />
 
 <footer th:replace="@{fragments/footer.html}"></footer>
 </body>

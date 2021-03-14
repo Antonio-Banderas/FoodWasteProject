@@ -25,4 +25,14 @@ public class FoodController {
     public String renderLogin(){
         return "login.html";
     }
+
+    @GetMapping("/donate")
+    public String renderDonate(){
+        return "donatePage.html";
+    }
+
+    @GetMapping("/about")
+    public String renderAbout(){
+        return "about.html";
+    }
 }

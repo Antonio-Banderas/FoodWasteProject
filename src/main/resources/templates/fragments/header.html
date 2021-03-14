@@ -2,15 +2,17 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <header>
     <link rel="stylesheet" th:href="@{/styles/header.css}" type="text/css">
-    <img th:src="@{/images/nav-top.jpg}" alt="food" /> <!-- //todo mangler billede -->
+    <img th:href="@{/images/nav-top.jpg}" alt="food" /> <!-- //todo mangler billede -->
     <nav>
         <ul>
             <div class="nav-left">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/donate}">Donate</a></li>
+                <li><a th:href="@{/???}">Consume the living</a></li>
             </div>
             <div class="nav-right">
-                <li><a href="/login">Login</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/login}">Login</a></li>
             </div>
         </ul>
     </nav>
